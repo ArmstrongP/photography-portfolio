@@ -81,31 +81,46 @@
         <div class="max-w-screen-md">
           <h1 class="text-4xl pt-10 pb-8"><b>CONTACT</b></h1>
 
-          <form class="space-y-8" action="mailto:info@example.com">
+          <form id="contactForm" class="space-y-8" action="https://formspree.io/f/mwprbnyl" method="POST">
+            <!-- Success Message -->
+            <div id="successMessage" class="hidden p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400">
+              <span class="font-medium">Success!</span> Your message has been sent successfully. I'll get back to you soon!
+            </div>
+            
+            <!-- Error Message -->
+            <div id="errorMessage" class="hidden p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400">
+              <span class="font-medium">Error!</span> There was a problem sending your message. Please try again.
+            </div>
+
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                 email</label>
-              <input type="email" id="email"
+              <input type="email" id="email" name="email"
                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                placeholder="example@gmail.com" required />
+                placeholder="your.email@gmail.com" required />
             </div>
             <div>
               <label for="subject"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-              <input type="text" id="subject"
+              <input type="text" id="subject" name="subject"
                 class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                 placeholder="Let me know how I can help you" required />
             </div>
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your
                 message</label>
-              <textarea id="message" rows="6"
+              <textarea id="message" name="message" rows="6"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-neutral-900 dark:border-neutral-800 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                placeholder="Leave a comment..." required></textarea>
+                placeholder="Tell me about your photography needs..." required></textarea>
             </div>
-            <button type="submit"
-              class="py-3 px-5 text-sm font-medium text-center bg-black dark:bg-white text-white dark:text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-              Send message
+            
+            <!-- Hidden field for form identification -->
+            <input type="hidden" name="_subject" value="New Contact Form Submission from Photography Portfolio">
+            
+            <button type="submit" id="submitBtn"
+              class="py-3 px-5 text-sm font-medium text-center bg-black dark:bg-white text-white dark:text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+              <span id="submitText">Send message</span>
+              <span id="loadingText" class="hidden">Sending...</span>
             </button>
           </form>
         </div>
@@ -114,8 +129,8 @@
         <div
           class="bg-white dark:bg-neutral-900 p-5 pb-20 m-6 md:m-12 shadow-lg border border-gray-100 dark:border-neutral-800  hover:rotate-0 transition duration-500 rotate-6 relative">
           <img
-            src="https://images.unsplash.com/reserve/yZfr4jmxQyuaE132MWZm_stagnes.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2052&q=80"
-            alt="" class="flex flex-col aspect-square w-full object-cover h-auto max-h-full" />
+            src="../src/images/contact-photo.jpg"
+            alt="Armstrong Peterson Photography" class="flex flex-col aspect-square w-full object-cover h-auto max-h-full" />
         </div>
       </div>
     </div>
@@ -131,7 +146,7 @@
           </p>
           <div class="flex mx-auto">
             <div class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
-              <a class="transition duration-300 hover:opacity-75" href="https://www.facebook.com" target="_blank"
+              <a class="transition duration-300 hover:opacity-75" href="https://www.facebook.com/armstrong.peterson.52" target="_blank"
                 rel="noreferrer">
                 <span class="sr-only"> Facebook </span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -140,7 +155,7 @@
                     clipRule="evenodd" />
                 </svg>
               </a>
-              <a class="transition duration-300 hover:opacity-75" href="https://www.instagram.com" target="_blank"
+              <a class="transition duration-300 hover:opacity-75" href="https://www.instagram.com/armstrong_peterson/" target="_blank"
                 rel="noreferrer">
                 <span class="sr-only"> Instagram </span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -149,15 +164,7 @@
                     clipRule="evenodd" />
                 </svg>
               </a>
-              <a class="transition duration-300 hover:opacity-75" href="https://twitter.com" target="_blank"
-                rel="noreferrer">
-                <span class="sr-only"> Twitter </span>
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path
-                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                </svg>
-              </a>
-              <a class="transition duration-300 hover:opacity-75" href="https://www.linkedin.com" target="_blank"
+              <a class="transition duration-300 hover:opacity-75" href="https://www.linkedin.com/in/armstrong-peterson-544269273/" target="_blank"
                 rel="noreferrer">
                 <span class="sr-only">LinkedIn</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -177,6 +184,88 @@
   </footer>
   <script src="fade_in.js"></script>
   <script src="menu.js"></script>
+  
+  <!-- Contact Form JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contactForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const submitText = document.getElementById('submitText');
+      const loadingText = document.getElementById('loadingText');
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Show loading state
+        submitBtn.disabled = true;
+        submitText.classList.add('hidden');
+        loadingText.classList.remove('hidden');
+        
+        // Hide previous messages
+        successMessage.classList.add('hidden');
+        errorMessage.classList.add('hidden');
+
+        // Get form data
+        const formData = new FormData(form);
+        
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (response.ok) {
+            // Success
+            successMessage.classList.remove('hidden');
+            form.reset();
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            throw new Error('Form submission failed');
+          }
+        } catch (error) {
+          // Error
+          errorMessage.classList.remove('hidden');
+          errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } finally {
+          // Reset button state
+          submitBtn.disabled = false;
+          submitText.classList.remove('hidden');
+          loadingText.classList.add('hidden');
+        }
+      });
+
+      // Real-time form validation feedback
+      const inputs = form.querySelectorAll('input[required], textarea[required]');
+      inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+          if (this.value.trim() === '') {
+            this.classList.add('border-red-500', 'focus:border-red-500');
+            this.classList.remove('border-gray-300', 'focus:border-primary-500');
+          } else {
+            this.classList.remove('border-red-500', 'focus:border-red-500');
+            this.classList.add('border-gray-300', 'focus:border-primary-500');
+          }
+        });
+      });
+
+      // Email validation
+      const emailInput = document.getElementById('email');
+      emailInput.addEventListener('blur', function() {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (this.value && !emailRegex.test(this.value)) {
+          this.classList.add('border-red-500', 'focus:border-red-500');
+          this.classList.remove('border-gray-300', 'focus:border-primary-500');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
