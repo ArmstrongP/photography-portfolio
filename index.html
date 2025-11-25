@@ -31,12 +31,12 @@
       content: ["./dist/*.{html,js}"],
       theme: {
         extend:
-                {
-                  fontFamily: {
-                    'nothingyoucoulddo': ['Nothing You Could Do', 'cursive'],
-                    'signika': ['Signika', 'sans-serif'],
-                  },
-                },
+        {
+          fontFamily: {
+            'nothingyoucoulddo': ['Nothing You Could Do', 'cursive'],
+            'signika': ['Signika', 'sans-serif'],
+          },
+        },
       },
       plugins: [],
     }
@@ -102,181 +102,261 @@
     <h1 class="text-4xl pt-10 pb-8 font-bold">PORTFOLIO</h1>
     <section class="text-neutral-700">
       <div class="container w-full">
-        <div class="flex flex-wrap w-full">
-          <div class="flex w-full md:w-1/2 flex-wrap">
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-01.jpg"
-                  data-fancybox="gallery">
-                  <img src="src/images/photo-01.jpg" 
-                    class="block h-full w-full object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    alt="Photography portfolio image 1"
-                    />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-02.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 2"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-02.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-03.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 3"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-03.jpg" />
-                </a>
-              </div>
-            </div>
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+          <!-- Photo 01 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-01.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-01.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 1" />
+            </a>
           </div>
-          <div class="flex w-full md:w-1/2 flex-wrap">
-            <div class="w-full p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-04.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 4"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-04.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-05.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 5"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-05.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-06.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 6"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-06.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-07.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 7"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-07.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-08.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 8"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-08.jpg" />
-                </a>
-              </div>
-            </div>
+          <!-- Photo 02 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-02.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-02.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 2" />
+            </a>
           </div>
-
-          <div class="flex w-full md:w-1/2 flex-wrap">
-            <div class="w-full p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-09.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 9"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-09.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-10.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 10"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-10.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-11.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 11"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-11.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-12.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 12"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-12.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-13.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 13"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-13.jpg" />
-                </a>
-              </div>
-            </div>
+          <!-- Photo 03 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-03.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-03.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 3" />
+            </a>
           </div>
-          <div class="flex w-full md:w-1/2 flex-wrap">
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-14.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 14"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-14.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-15.jpg"
-                  data-fancybox="gallery">
-                  <img alt="Photography portfolio image 15"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-15.jpg" />
-                </a>
-              </div>
-            </div>
-            <div class="w-full p-1">
-              <div class="overflow-hidden h-full w-full">
-                <a href="src/images/photo-16.jpg"
-                  data-fancybox="gallery">
-                  <img
-                    alt="Photography portfolio image 16"
-                    class="block h-full w-full object-cover object-center opacity-0 animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
-                    src="src/images/photo-16.jpg" />
-                </a>
-              </div>
-            </div>
+          <!-- Photo 04 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-04.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-04.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 4" />
+            </a>
           </div>
+          <!-- Photo 05 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-05.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-05.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 5" />
+            </a>
+          </div>
+          <!-- Photo 06 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-06.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-06.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 6" />
+            </a>
+          </div>
+          <!-- Photo 07 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-07.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-07.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 7" />
+            </a>
+          </div>
+          <!-- Photo 08 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-08.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-08.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 8" />
+            </a>
+          </div>
+          <!-- Photo 09 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-09.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-09.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 9" />
+            </a>
+          </div>
+          <!-- Photo 10 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-10.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-10.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 10" />
+            </a>
+          </div>
+          <!-- Photo 11 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-11.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-11.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 11" />
+            </a>
+          </div>
+          <!-- Photo 12 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-12.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-12.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 12" />
+            </a>
+          </div>
+          <!-- Photo 13 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-13.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-13.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 13" />
+            </a>
+          </div>
+          <!-- Photo 14 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-14.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-14.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 14" />
+            </a>
+          </div>
+          <!-- Photo 15 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-15.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-15.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 15" />
+            </a>
+          </div>
+          <!-- Photo 16 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-16.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-16.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 16" />
+            </a>
+          </div>
+          <!-- Photo 17 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-17.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-17.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 17" />
+            </a>
+          </div>
+          <!-- Photo 18 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-18.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-18.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 18" />
+            </a>
+          </div>
+          <!-- Photo 19 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-19.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-19.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 19" />
+            </a>
+          </div>
+          <!-- Photo 20 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-20.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-20.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 20" />
+            </a>
+          </div>
+          <!-- Photo 21 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-21.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-21.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 21" />
+            </a>
+          </div>
+          <!-- Photo 22 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-22.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-22.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 22" />
+            </a>
+          </div>
+          <!-- Photo 23 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-23.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-23.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 23" />
+            </a>
+          </div>
+          <!-- Photo 24 -->
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-24.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-24.jpg"
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 24" />
+            </a>
+          </div>
+          <!--
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-25.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-25.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 25" />
+            </a>
+          </div>
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-26.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-26.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 26" />
+            </a>
+          </div>
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-27.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-27.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 27" />
+            </a>
+          </div>
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-28.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-28.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 28" />
+            </a>
+          </div>
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-29.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-29.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 29" />
+            </a>
+          </div>
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-30.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-30.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 30" />
+            </a>
+          </div>
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-31.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-31.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 31" />
+            </a>
+          </div>
+          <div class="break-inside-avoid overflow-hidden rounded-lg">
+            <a href="src/images/photo-32.jpg" data-fancybox="gallery">
+              <img src="src/images/photo-32.jpg" 
+                class="block w-full h-auto object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+                alt="Photography portfolio image 32" />
+            </a>
+          </div>
+          -->
         </div>
       </div>
-    </section>
+  </div>
+  </section>
   </div>
   <!-- Footer -->
   <footer>
@@ -289,16 +369,16 @@
           </p>-->
           <div class="flex mx-auto">
             <div class="mx-auto space-x-6 flex mt-8 text-gray-600 dark:text-gray-300">
-              <a class="transition duration-300 hover:opacity-75" href="https://www.facebook.com/armstrong.peterson.52" target="_blank"
-                rel="noreferrer">
+              <a class="transition duration-300 hover:opacity-75" href="https://www.facebook.com/armstrong.peterson.52"
+                target="_blank" rel="noreferrer">
                 <span class="sr-only"> Facebook </span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                   <path
                     d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                 </svg>
               </a>
-              <a class="transition duration-300 hover:opacity-75" href="https://www.instagram.com/armstrong_peterson/" target="_blank"
-                rel="noreferrer">
+              <a class="transition duration-300 hover:opacity-75" href="https://www.instagram.com/armstrong_peterson/"
+                target="_blank" rel="noreferrer">
                 <span class="sr-only"> Instagram </span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                   <path
@@ -313,15 +393,15 @@
                     d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
                 </svg>
               </a>  -->
-              <a class="transition duration-300 hover:opacity-75" href="https://www.linkedin.com/in/armstrong-peterson-544269273/" target="_blank"
-                rel="noreferrer">
+              <a class="transition duration-300 hover:opacity-75"
+                href="https://www.linkedin.com/in/armstrong-peterson-544269273/" target="_blank" rel="noreferrer">
                 <span class="sr-only">LinkedIn</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
                   <path
                     d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
                 </svg>
               </a>
-             <!-- <a class="transition duration-300 hover:opacity-75" href="https://www.behance.net" target="_blank"
+              <!-- <a class="transition duration-300 hover:opacity-75" href="https://www.behance.net" target="_blank"
                 rel="noreferrer">
                 <span class="sr-only">Behance</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
